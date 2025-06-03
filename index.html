@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de proyectos de José Mancuello, desarrollador y analista de datos.">
+    <meta name="keywords" content="José Mancuello, portafolio, proyectos, desarrollador, Flutter, Firebase, inteligencia artificial, web, móvil, datos">
+    <meta name="author" content="José Mancuello">
+    <title>Portafolio - JOSE MANCUELLO</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f94adf655e.js" crossorigin="anonymous"></script>
+</head>
+<a href="https://api.whatsapp.com/send?phone=+5493874555290" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+
+<body>
+    <header class="contenedor-header">
+        <div class="logo">
+            <a href="#">JM</a>
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="section inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="img/hero.jpg" alt="Foto de José Mancuello">
+                </div>
+                <h1>JOSE MANCUELLO</h1>
+                <h2>Ingeniero Informático - Desarrollador Full Stack</h2>
+                <div class="redes">
+                    <a href="https://www.facebook.com/jose.mancuello.984" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/Jos49525232" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/josee.mancuelloo" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/josemancuello" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=+5493874555290" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="cv-descarga" style="margin-top: 20px;">
+                    <a href="cv.pdf" class="boton" download>Descargar CV</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobremi" class="section sobremi">
+            <div class="contenido-seccion">
+                <h2>Sobre Mí</h2>
+                <p>
+                    <span>Hola, soy José Mancuello.</span> Soy Ingeniero Informático de la Universidad Católica (2016-2023), con formación en Big Data, Data Science y una fuerte vocación por resolver problemas reales mediante la tecnología. Actualmente
+                    brindo servicios IT y desarrollo soluciones para empresas y emprendedores desde mi ciudad, Salta - Argentina.
+                    <br><br> Me especializo en el desarrollo de aplicaciones móviles y web con Flutter + Firebase, la implementación de sistemas inteligentes con Machine Learning, y la automatización de procesos en entornos educativos y comerciales. Además,
+                    lidero proyectos personalizados para tapicería automotor, donde integro soluciones digitales como sistemas de turnos y gestión de clientes.
+                </p>
+
+                <div class="fila">
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li><strong>Teléfono:</strong> 3874-555-290</li>
+                            <li><strong>Email:</strong> mancuellojose18@gmail.com</li>
+                            <li><strong>Ubicación:</strong> Salta-Capital, Argentina</li>
+                            <li><strong>Profesión:</strong> <span>Ingeniero Informático</span></li>
+                            <li><strong>Modalidad:</strong> <span>Freelancer</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h3>Proyectos Relevantes</h3>
+                        <ul>
+                            <li><strong>Sistema Tutor Inteligente</strong><br>App educativa para detectar discalculia mediante Machine Learning.</li>
+                            <li><strong>Sistema de Turnos para Tapicería</strong><br>Gestión de clientes, servicios e historial para emprendimientos locales.</li>
+                            <li><strong>Sistemas de Ventas y Consultorios</strong><br>Aplicaciones de escritorio desarrolladas en Java + MySQL.</li>
+                            <li><strong>Integración Flutter + Firebase</strong><br>Autenticación, Firestore, almacenamiento y TFLite.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="fila">
+                    <div class="col">
+                        <h3>Intereses</h3>
+                        <div class="contenedor-intereses">
+                            <div class="interes"><i class="fa-solid fa-code"></i><span>Código</span></div>
+                            <div class="interes"><i class="fa-solid fa-book"></i><span>Aprendizaje</span></div>
+                            <div class="interes"><i class="fa-solid fa-car"></i><span>Tapicería</span></div>
+                            <div class="interes"><i class="fa-solid fa-brain"></i><span>IA</span></div>
+                            <div class="interes"><i class="fa-solid fa-chart-line"></i><span>Datos</span></div>
+                            <div class="interes"><i class="fa-solid fa-users-gear"></i><span>Gestión</span></div>
+                            <div class="interes"><i class="fa-solid fa-handshake"></i><span>Proyectos</span></div>
+                            <div class="interes"><i class="fa-solid fa-laptop-code"></i><span>Desarrollo</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="skills" class="section skills">
+            <div class="contenido-seccion">
+                <h2>Skills</h2>
+                <div class="fila">
+                    <div class="col">
+                        <h3>Habilidades Técnicas</h3>
+                        <div class="skill"><span>Flutter & Firebase</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 90%;"><span>90%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill"><span>Java</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 95%;"><span>95%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill"><span>Python (ML)</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 85%;"><span>85%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill"><span>HTML/CSS/JS</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 88%;"><span>88%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill"><span>MySQL</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 80%;"><span>80%</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <h3>Habilidades Blandas</h3>
+                        <div class="skill"><span>Comunicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 80%;"><span>80%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill"><span>Trabajo en equipo</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 75%;"><span>75%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill"><span>Liderazgo</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 70%;"><span>70%</span></div>
+                            </div>
+                        </div>
+                        <div class="skill"><span>Creatividad</span>
+                            <div class="barra-skill">
+                                <div class="progreso" style="width: 95%;"><span>95%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="curriculum" class="section curriculum">
+            <div class="contenido-seccion">
+                <h2>Currículum</h2>
+                <div class="fila">
+                    <!-- Educación -->
+                    <div class="col izquierda">
+                        <h3>Educación</h3>
+
+                        <div class="item">
+                            <h4>Ingeniería Informática</h4>
+                            <span class="casa">Universidad Católica Nuestra Señora de la Asunción</span>
+                            <span class="fecha">2016 - 2023</span>
+                            <p>Graduado como Ingeniero Informático con sólida formación en desarrollo de software, análisis de datos, gestión de proyectos y tecnologías emergentes.</p>
+                        </div>
+
+                        <div class="item">
+                            <h4>Big Data</h4>
+                            <span class="casa">Fundación Carlos Slim</span>
+                            <span class="fecha">2022 - Actualidad</span>
+                            <p>Capacitación en manejo de datos masivos, almacenamiento, visualización y herramientas como Hadoop y Spark.</p>
+                        </div>
+
+                        <div class="item">
+                            <h4>Data Science</h4>
+                            <span class="casa">Universidad Nacional de Córdoba</span>
+                            <span class="fecha">2023 - Actualidad</span>
+                            <p>Formación técnica en aprendizaje automático, modelado de datos, Python y análisis predictivo aplicado a educación e inteligencia artificial.</p>
+                        </div>
+                    </div>
+
+                    <!-- Experiencia -->
+                    <div class="col derecha">
+                        <h3>Experiencia</h3>
+
+                        <div class="item">
+                            <h4>Desarrollador de Sistemas de Gestión</h4>
+                            <span class="casa">Proyecto Freelance</span>
+                            <span class="fecha">2023</span>
+                            <p>Diseño y desarrollo de un sistema de escritorio en Java con MySQL para gestionar empleados, productos, ventas, caja, facturación, y reportes. Proyecto pensado para pymes y estudios contables.</p>
+                        </div>
+
+                        <div class="item">
+                            <h4>Sistema Tutor Inteligente con IA</h4>
+                            <span class="casa">Proyecto de Tesis</span>
+                            <span class="fecha">2024</span>
+                            <p>Desarrollo de un sistema educativo basado en Flutter y Firebase, integrado con modelos de Machine Learning (TensorFlow) para detectar discalculia en estudiantes de nivel primario.</p>
+                        </div>
+
+                        <div class="item">
+                            <h4>Servicios IT</h4>
+                            <span class="casa">Tec Informática</span>
+                            <span class="fecha">2022 - Presente</span>
+                            <p>Soporte técnico, mantenimiento preventivo y correctivo de equipos, administración de sistemas y asistencia técnica para empresas locales.</p>
+                        </div>
+
+                        <div class="item">
+                            <h4>Responsable de Tecnología</h4>
+                            <span class="casa">Municipalidad de Santa María de Fe</span>
+                            <span class="fecha">2021</span>
+                            <p>Administración de redes, soporte técnico, planificación de recursos tecnológicos y gestión de infraestructura digital del municipio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="section">
+            <h2>Servicios</h2>
+            <ul class="lista-servicios">
+                <li>🛠 Desarrollo de Aplicaciones Web y Móviles</li>
+                <li>🔍 Modelado Predictivo y Machine Learning</li>
+                <li>📊 Automatización y Visualización de Datos</li>
+                <li>📱 Integración Flutter + Firebase</li>
+                <li>🎓 Proyectos educativos con inteligencia artificial</li>
+            </ul>
+        </section>
+        <section id="estadisticas" class="section">
+            <h2>Resumen Profesional</h2>
+            <div class="stats">
+                <div><strong>+20</strong><br>Proyectos Completados</div>
+                <div><strong>+10</strong><br>Herramientas Dominadas</div>
+                <div><strong>+6</strong><br>Clientes Satisfechos</div>
+            </div>
+        </section>
+
+
+
+        <section id="portfolio" class="section">
+            <h2 style="text-align:center;">Mis Proyectos</h2>
+            <div class="filtros">
+                <button class="boton" onclick="filtrarProyectos('todos')">Todos</button>
+                <button class="boton" onclick="filtrarProyectos('web')">Web</button>
+                <button class="boton" onclick="filtrarProyectos('movil')">Móvil</button>
+                <button class="boton" onclick="filtrarProyectos('data')">Data</button>
+            </div>
+            <div class="galeria">
+                <div class="card proyecto web">
+                    <h3>Proyecto Web</h3>
+                    <p>Descripción breve del proyecto web.</p>
+                </div>
+                <div class="card proyecto movil">
+                    <h3>App Móvil</h3>
+                    <p>Descripción breve de la app móvil.</p>
+                </div>
+                <div class="card proyecto data">
+                    <h3>Dashboard de Datos</h3>
+                    <p>Visualización y análisis de datos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <h2 style="text-align:center;">Contacto</h2>
+            <form class="formulario-contacto" onsubmit="return validarFormulario()" action="mailto:jose.mancuello@example.com" method="POST" enctype="text/plain">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo" required>
+                <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+                <button type="submit" class="boton">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes-sociales">
+            <a href="https://github.com/josemancuello" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/josemancuello" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:jose.mancuello@example.com" title="Correo"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2025 José Mancuello</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <a href="https://api.whatsapp.com/send?phone=+5493874555290" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+
+</html>

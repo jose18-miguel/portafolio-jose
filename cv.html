@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - JOSE MANCUELLO</title>
+    <style>
+        /* Estilos generales para una buena impresión */
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.5;
+            color: #000;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        
+        header p {
+            margin: 5px 0;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section-header {
+            border-bottom: 2px solid #1c85b6;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            color: #1c85b6;
+        }
+        
+        .info-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .info-list li {
+            margin-bottom: 15px;
+        }
+        
+        .info-list li strong {
+            color: #1c85b6;
+        }
+        /* Botón para imprimir (oculto en la versión impresa) */
+        
+        .print-button {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .print-button button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #1c85b6;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        @media print {
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>JOSE MANCUELLO</h1>
+        <p>Ingeniero Informático | FREELANCE</p>
+        <p>Salta-Capital, Argentina</p>
+        <p>Tel: 3874-555-290 | Email: mancuellojose18@gmail.com</p>
+    </header>
+
+    <section class="section">
+        <h2 class="section-header">Perfil Profesional</h2>
+        <p>
+            Ingeniero informático con experiencia en análisis, diseño, programación e implementación de soluciones tecnológicas. Cuento también con conocimientos en el desarrollo e implementación de modelos de <strong>Machine Learning</strong> utilizando
+            Python, Scikit-Learn y TensorFlow para abordar desafíos complejos en el análisis de datos.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2 class="section-header">Educación</h2>
+        <ul class="info-list">
+            <li>
+                <strong>Ingeniería Informática</strong><br> Universidad Católica "Nuestra Señora de la Asunción"<br> 01/02/2016 - Al presente, Paraguay
+            </li>
+            <li>
+                <strong>Big Data</strong><br> Fundación Carlos Slim<br> 02/05/2022 - Al presente, México
+            </li>
+            <li>
+                <strong>Data Science</strong><br> Universidad Nacional de Córdoba<br> 06/03/2023 - Al presente, Argentina
+            </li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2 class="section-header">Experiencia Profesional</h2>
+        <ul class="info-list">
+            <li>
+                <strong>Servicios IT</strong><br> Tec Informática<br> 01/05/2022 - Al presente<br> Mantenimiento y soporte de sistemas informáticos, implementación de soluciones tecnológicas y administración de redes.
+            </li>
+            <li>
+                <strong>Tecnología de la Información (IT)</strong><br> Municipalidad De Santa María De Fe<br> 03/05/2021 - 24/09/2021<br> Administración de sistemas, soporte técnico y gestión de proyectos para garantizar la eficiencia operativa y la seguridad
+                informática.
+            </li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h2 class="section-header">Habilidades</h2>
+        <ul class="info-list">
+            <li>
+                <strong>Lenguajes de Programación:</strong> JavaScript, HTML &amp; CSS, Java, Python, R.
+            </li>
+            <li>
+                <strong>Machine Learning:</strong> Desarrollo de modelos predictivos con Python, Scikit-Learn y TensorFlow.
+            </li>
+            <li>
+                <strong>Habilidades Profesionales:</strong> Comunicación, trabajo en equipo, creatividad, dedicación y project management.
+            </li>
+        </ul>
+    </section>
+
+    <!-- Botón para imprimir el CV (no se mostrará en la versión impresa) -->
+    <div class="print-button no-print">
+        <button onclick="window.print()">Imprimir CV</button>
+    </div>
+</body>
+
+</html>
