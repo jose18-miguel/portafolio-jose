@@ -56,3 +56,35 @@ function validarFormulario() {
     }
     return true;
 }
+
+// ===============================
+// Modo claro/oscuro con almacenamiento
+// ===============================
+
+function aplicarTemaGuardado() {
+    const stored = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', stored);
+    const toggle = document.getElementById('theme-toggle');
+    if (toggle && stored === 'light') {
+        toggle.textContent = 'Modo Oscuro';
+    }
+}
+
+function toggleTheme() {
+    const actual = document.documentElement.getAttribute('data-theme');
+    const nuevo = actual === 'light' ? 'dark' : 'light';
+    document.documentElement.setAttribute('data-theme', nuevo);
+    localStorage.setItem('theme', nuevo);
+    const toggle = document.getElementById('theme-toggle');
+    if (toggle) {
+        toggle.textContent = nuevo === 'light' ? 'Modo Oscuro' : 'Modo Claro';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    aplicarTemaGuardado();
+    const boton = document.getElementById('theme-toggle');
+    if (boton) {
+        boton.addEventListener('click', toggleTheme);
+    }
+});
