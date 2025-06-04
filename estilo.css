@@ -11,6 +11,13 @@
     --fuente-principal: 'Inter', sans-serif;
 }
 
+[data-theme="light"] {
+    --color-fondo: #ffffff;
+    --color-acento: #00796B;
+    --color-texto: #333333;
+    --color-secundario: #f2f2f2;
+}
+
 body {
     margin: 0;
     font-family: var(--fuente-principal);
@@ -68,6 +75,10 @@ nav ul li a.activo {
     background-color: var(--color-acento);
     color: #fff;
     border-radius: 20px;
+}
+
+#theme-toggle {
+    margin-left: 1rem;
 }
 
 
